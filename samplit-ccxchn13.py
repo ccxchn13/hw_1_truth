@@ -1,9 +1,9 @@
 import sys
 import random
 
-filename = sys.argv[1]
+csv_filename = sys.argv[1]
 
-with open(filename, "r") as file:
+with open(csv_filename, "r") as file:
     for line in file:
         if random.random() < 0.01:
             print(line, end="")
